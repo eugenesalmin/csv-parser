@@ -1,0 +1,19 @@
+<h1>Folder scanned: $folder</h1>
+
+<h2>CSV Files stat</h2>
+<table border="1">
+<tr>
+ <th>CSV file full name</th>
+ <th>Row count (with header row)</th>
+ <th>List of columns</th>
+ <th>Empty columns stat, separated by coma:<br>Col number and amount of empty cells in that column</th>
+</tr>
+#foreach($stat in $stats)
+  <tr>
+   <td id="file_$foreach.count">$stat.fileName</td>
+   <td id="rowCount_$foreach.count">$stat.rowCount</td>
+   <td id="columns_$foreach.count">$stat.columns</td>
+   <td id="emptyCells_$foreach.count">$stat.emptyCellsStat</td>
+  </tr>
+#end
+</table>

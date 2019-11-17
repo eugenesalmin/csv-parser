@@ -1,0 +1,5 @@
+<div style="background: #0066ff; height: 80px; padding: 4px;">
+  <div style="float: left">
+      <h1>Request processed.</h1>
+  </div>
+</div>
